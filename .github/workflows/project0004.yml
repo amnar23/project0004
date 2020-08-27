@@ -37,7 +37,6 @@ jobs:
       #Install Surge
       - name: Install Surge
         run: npm install --global surge
-      
       #Deploy Surge
       - name: Deploy React App to Surge
         run: surge ./build learnreact0004.surge.sh --token ${{secrets.PROJECT0004_SURGE_TOKEN}}
