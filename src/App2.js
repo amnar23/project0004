@@ -1,8 +1,13 @@
 import React from 'react'
+import Hello from './Hello'
 
-function App2()
+function App2({name,smile})
 {
-    return <div>Hello World from App2.js</div>
+    
+    return <div><p>Component1</p>Hello World from {name}!! {smile}
+    <br></br>
+    <Hello firstName={name}></Hello></div>  //passing name to Hello.js
+    
 }
 
 export default App2;
